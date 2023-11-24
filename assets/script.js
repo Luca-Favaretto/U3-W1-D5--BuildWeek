@@ -162,6 +162,18 @@ var nokia3320 = /** @class */ (function (_super) {
 var luca = new nokia3320("Luca Favaretto", 20);
 p.innerText =
     "Tutti i miei pulsanti hanno una funzionalità, quindi che aspetti a premerli!!";
+var btnChiama = document.getElementById("chiama");
+console.log(btnChiama);
+btnChiama.onclick = function () {
+    div.style.backgroundImage = "none";
+    luca.chiamata();
+};
+var btnMettiGiu = document.getElementById("metti-giù");
+console.log(btnMettiGiu);
+btnMettiGiu.onclick = function () {
+    div.style.backgroundImage = "none";
+    luca.fineChiamata();
+};
 var btnCuore = document.getElementById("btn-cuore");
 btnCuore.onclick = function () {
     p.innerText = "Te amo<3";

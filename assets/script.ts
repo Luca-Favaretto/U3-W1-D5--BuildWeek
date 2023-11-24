@@ -168,6 +168,20 @@ class nokia3320 extends Telefono {
 let luca = new nokia3320("Luca Favaretto", 20);
 p.innerText =
   "Tutti i miei pulsanti hanno una funzionalità, quindi che aspetti a premerli!!";
+
+const btnChiama = document.getElementById("chiama") as HTMLButtonElement;
+console.log(btnChiama);
+
+btnChiama.onclick = () => {
+  div.style.backgroundImage = "none";
+  luca.chiamata();
+};
+const btnMettiGiu = document.getElementById("metti-giù") as HTMLButtonElement;
+console.log(btnMettiGiu);
+btnMettiGiu.onclick = () => {
+  div.style.backgroundImage = "none";
+  luca.fineChiamata();
+};
 const btnCuore = document.getElementById("btn-cuore") as HTMLButtonElement;
 btnCuore.onclick = () => {
   p.innerText = "Te amo<3";
