@@ -4,18 +4,19 @@
   --colore-schermo: #a1c1b2;
 }
 body {
-  font-family: Arial, sans-serif;
   text-align: center;
   margin: 20px;
 }
-
+.indistruttibile {
+  background-color: #2f2f41;
+}
 .telefono {
   background-color: var(--colore-scocca);
   border: 1px solid #ccc;
   border-radius: 50px;
   padding: 20px;
   width: 500px;
-  height: 800px;
+  height: 900px;
   margin: auto;
 }
 
@@ -25,15 +26,15 @@ body {
   height: 300px;
   width: 420px;
   margin-bottom: 10px auto 10px;
-  padding: 10px;
+  padding: 15px;
   font-size: 20px;
-  text-align: right;
   border-radius: 10px;
+  background-size: contain;
 }
 
 .tastiera {
   padding: 70px;
-  height: 370px;
+  height: 450px;
   padding: 10px;
   margin: 5px;
   font-size: 16px;
@@ -43,4 +44,11 @@ body {
   background-color: var(--colore-pulsanti);
   border-radius: 45%;
   width: 100px;
+  height: 50px;
+}
+
+#schermo {
+  font-size: 2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.678);
 }
