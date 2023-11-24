@@ -19,59 +19,89 @@
   <body>
     <div class="container-fluid mt-5">
       <div class="p-3 telefono">
-        <div class="card">
+        <div class="card bg-transparent border-0">
           <h2 class="my-4">Nokia 3320</h2>
           <div class="d-flex justify-content-center">
             <div class="schermo">81276389616431</div>
           </div>
-          <div class="card-body tastiera">
+          <div class="card-body tastiera d-flex">
             <div class="row">
               <div class="col-12">
                 <div class="row justify-content-center">
-                  <div class="col 3"><i class="bi bi-caret-left-fill"></i></div>
-                  <div class="col 3"><i class="bi bi-caret-up-fill"></i></div>
                   <div class="col 3">
-                    <i class="bi bi-caret-right-fill"></i>
+                    <button>
+                      <i
+                        class="bi fs-4 bi-caret-left-fill text-success-emphasis"
+                      ></i>
+                    </button>
+                  </div>
+                  <div class="col 3">
+                    <button>
+                      <i
+                        class="bi fs-4 bi-caret-up-fill text-success-emphasis"
+                      ></i>
+                    </button>
+                  </div>
+                  <div class="col 3">
+                    <button>
+                      <i
+                        class="bi fs-4 bi-caret-right-fill text-success-emphasis"
+                      ></i>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="row justify-content-center">
-                  <div class="col 3"><i class="bi bi-telephone-fill"></i></div>
-                  <div class="col 3"><i class="bi bi-caret-down-fill"></i></div>
+                  <div class="col 3 text-success">
+                    <button onclick="luca.chiamata()">
+                      <i class="bi fs-4 bi-telephone-fill"></i>
+                    </button>
+                  </div>
                   <div class="col 3">
-                    <i class="bi bi-telephone-x-fill"></i>
+                    <button>
+                      <i
+                        class="bi fs-4 bi-caret-down-fill text-success-emphasis"
+                      ></i>
+                    </button>
+                  </div>
+                  <div class="col 3">
+                    <button onclick="luca.fineChiamata()">
+                      <i class="bi fs-4 bi-telephone-x-fill text-danger"></i>
+                    </button>
                   </div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="row justify-content-center">
-                  <div class="col 3">1</div>
-                  <div class="col 3">2</div>
-                  <div class="col 3">3</div>
+                  <div class="col 3 fs-5 fw-bolder"><button>1</button></div>
+                  <div class="col 3 fs-5 fw-bolder"><button>2</button></div>
+                  <div class="col 3 fs-5 fw-bolder"><button>3</button></div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="row justify-content-center">
-                  <div class="col 3">4</div>
-                  <div class="col 3">5</div>
-                  <div class="col 3">6</div>
+                  <div class="col 3 fs-5 fw-bolder"><button>4</button></div>
+                  <div class="col 3 fs-5 fw-bolder"><button>5</button></div>
+                  <div class="col 3 fs-5 fw-bolder"><button>6</button></div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="row justify-content-center">
-                  <div class="col 3">7</div>
-                  <div class="col 3">8</div>
-                  <div class="col 3">9</div>
+                  <div class="col 3 fs-5 fw-bolder"><button>7</button></div>
+                  <div class="col 3 fs-5 fw-bolder"><button>8</button></div>
+                  <div class="col 3 fs-5 fw-bolder"><button>9</button></div>
                 </div>
               </div>
               <div class="col-12">
                 <div class="row justify-content-center">
-                  <div class="col 3">
-                    <i class="bi bi-arrow-through-heart"></i>
+                  <div class="col 3 fs-5 fw-bolder">
+                    <button><i class="bi bi-arrow-through-heart"></i></button>
                   </div>
-                  <div class="col 3">0</div>
-                  <div class="col 3"><i class="bi bi-house"></i></div>
+                  <div class="col 3 fs-5 fw-bolder"><button>0</button></div>
+                  <div class="col 3 fs-5 fw-bolder">
+                    <button><i class="bi bi-house"></i></button>
+                  </div>
                 </div>
               </div>
             </div>
